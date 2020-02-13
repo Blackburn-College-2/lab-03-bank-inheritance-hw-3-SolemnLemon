@@ -16,6 +16,18 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Account a=new Account();
+        a.deposit(new Money(new Currency("dollars","$"),10.0));
+             a.withdrawl(new Money(new Currency("dollars","$"),200.0));
+             a.withdrawl(new Money(new Currency("dollars","$"),250.0));
+             a.withdrawl(new Money(new Currency("dollars","$"),2.0));
+             a.withdrawl(new Money(new Currency("dollars","$"),34.0));
+              a.deposit(new Money(new Currency("dollars","$"),50.0));
+               a.deposit(new Money(new Currency("dollars","$"),70.0));
+                a.deposit(new Money(new Currency("dollars","$"),110.0));
+                 a.deposit(new Money(new Currency("dollars","$"),60.0));
+                  a.deposit(new Money(new Currency("dollars","$"),43.0));
+        a.printHistory();
     }
     
 }
