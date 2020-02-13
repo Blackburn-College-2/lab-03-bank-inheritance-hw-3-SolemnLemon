@@ -11,7 +11,7 @@ import java.util.Calendar;
  *
  * @author paul.kline
  */
-public class Main {
+public class Runner {
 
     /**
      * @param args the command line arguments
@@ -39,6 +39,7 @@ public class Main {
 
         Loan loan = new Loan(new Money(new Currency("dollars", "$"), -500.0));
         loan.pay(new Money(new Currency("dollars", "$"), 100.0));
+         loan.pay(new Money(new Currency("dollars", "$"), 441.0));
 
         Transaction t = new Transaction((new Money(new Currency("dollars", "$"), 20.0)),
                 new CheckingAccount(new Money(new Currency("dollars", "$"), 100.0)),
