@@ -21,6 +21,15 @@ public class Money extends Currency {
         this.amount=amount;
     }
     
+    /**
+     * multiplies 2 doubles and returns the result
+     * @param d1
+     * @param d2
+     * @return 
+     */
+    public double multiply(double d1){
+    return d1*getAmount();
+    }
     public String getAmountString(){
     return amount+getCurrency().getName();
     
@@ -45,4 +54,5 @@ public class Money extends Currency {
     
     return getAmount()+""+getSymbol()+" "+getName();
     }
+    
 }
